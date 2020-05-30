@@ -1,4 +1,8 @@
 window.onload = function () {
+  highlightDay();
+};
+
+function highlightDay() {
   const day = new Date().getDate();
   const days = document.querySelectorAll(".day");
 
@@ -7,4 +11,8 @@ window.onload = function () {
       days[i].classList.add("today");
     }
   }
-};
+}
+
+function addDayName() {
+  const names = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+}
