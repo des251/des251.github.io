@@ -2,7 +2,19 @@ window.onload = function () {
   highlightDay();
 };
 
-function createMonth() {}
+function createMonth() {
+  const head = document.querySelector(".head");
+  const year = new Date().getFullYear();
+  const month = new Date().getMonth();
+  const days = getDaysInMonth(month, year);
+  let el;
+  for (let i = 1; i <= days; i++) {
+    el = document.createElement("div");
+    el.classList.add("col", "day", "azure");
+    el.innerHTML = i;
+    head.appendChild(el);
+  }
+}
 
 function highlightDay() {
   const day = new Date().getDate();
@@ -54,8 +66,3 @@ function getDaysInMonth(month, year) {
   }
   return days;
 }
-
-console.log(getDaysInMonth(2, 2020));
-console.log(new Date().getMonth());
-console.log(new Date().getFullYear());
-console.log(addDayName(new Date().getDay()));
