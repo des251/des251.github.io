@@ -1,2 +1,1 @@
-# des251.github.io
-timetable
+Shedule with vanilla js

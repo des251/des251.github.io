@@ -4,127 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/minty/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>Radiobox - график</title>
+  <title>Рыжая</title>
 </head>
 
 <body>
-  <div class="container">
-    <h1 class="title">График работы</h1>
-  </div>
-  <div class="container">
-    <span class="badge badge-danger">Н</span>
-    <span> - Надя</span>
-    <br>
-    <span class="badge badge-info">Д</span>
-    <span> - Денис</span>
-    <br>
-    <span class="badge badge-success">В</span>
-    <span> - Вася</span>
-    <hr>
-    <h6 class="month">Май</h6>
-  </div>
-  <div class="container">
-    <div class="row head">
-      <div class="col day azure">25</div>
-      <div class="col day azure">26</div>
-      <div class="col day azure">27</div>
-      <div class="col day azure">28</div>
-      <div class="col day azure">29</div>
-      <div class="col day lightsalmon">30</div>
-      <div class="col day lightsalmon">31</div>
+  <header class="bg-primary">
+    <div class="logo">
+      <img src="./img/logo.png" alt="logo" width="36">
     </div>
-    <div class="row">
-      <div class="col day">
-        <span class="badge badge-danger">Н</span>
-        <br>
-        <span class="badge badge-info">Д</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-danger">Н</span>
-        <br>
-        <span class="badge badge-success">В</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-success">В</span>
-        <br>
-        <span class="badge badge-info">Д</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-danger">Н</span>
-        <br>
-        <span class="badge badge-success">В</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-success">В</span>
-        <br>
-        <span class="badge badge-info">Д</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-danger">Н</span>
-        <br>
-        <span class="badge badge-info">Д</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-danger">Н</span>
-        <br>
-        <span class="badge badge-success">В</span>
-      </div>
-    </div>
+    <h1 class="main-title">График работы</h1>
+  </header>
 
+  <div class="days-titles bg-primary">
+    <ul>
+      <li>Пн</li>
+      <li>Вт</li>
+      <li>Ср</li>
+      <li>Чт</li>
+      <li>Пт</li>
+      <li>Сб</li>
+      <li>Вс</li>
+    </ul>
   </div>
-  <div class="container">
-    <div class="row head">
-      <div class="col day azure">1 <sup>пн</sup></div>
-      <div class="col day azure">2 <sup>вт</sup></div>
-      <div class="col day azure">3 <sup>ср</sup></div>
-      <div class="col day azure">4 <sup>чт</sup></div>
-      <div class="col day azure">5 <sup>пт</sup></div>
-      <div class="col day lightsalmon">6 <sup>сб</sup></div>
-      <div class="col day lightsalmon">7 <sup>вс</sup></div>
-    </div>
-    <div class="row">
-      <div class="col day">
-        <span class="badge badge-danger">Н</span>
-        <br>
-        <span class="badge badge-info">Д</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-danger">Н</span>
-        <br>
-        <span class="badge badge-success">В</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-success">В</span>
-        <br>
-        <span class="badge badge-info">Д</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-danger">Н</span>
-        <br>
-        <span class="badge badge-success">В</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-success">В</span>
-        <br>
-        <span class="badge badge-info">Д</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-danger">Н</span>
-        <br>
-        <span class="badge badge-info">Д</span>
-      </div>
-      <div class="col day">
-        <span class="badge badge-danger">Н</span>
-        <br>
-        <span class="badge badge-success">В</span>
-      </div>
-    </div>
 
+  <div class="workers">
+    <div class="worker">Надя</div>
+    <div class="worker">Денис</div>
+    <div class="worker">Вася</div>
   </div>
-  <script src="index.js"></script>
+
+  <div class="calendar">
+    <h5 class="month-title">
+      Январь
+    </h5>
+    <ul class="days-list">
+    </ul>
+  </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>
